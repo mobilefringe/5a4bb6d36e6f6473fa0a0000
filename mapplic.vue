@@ -198,7 +198,7 @@
                     console.log('Map is ready!')
                 },
                 locationopened(e, loc) {
-                    console.log(location.title + ' opened.');
+                    console.log(loc.title + ' opened.');
                     var self = map.data('mapplic');
                     console.log(self);
                     var el = document.getElementById('svg4538');
