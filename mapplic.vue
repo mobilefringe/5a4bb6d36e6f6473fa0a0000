@@ -116,7 +116,7 @@
                 },
                 fillcolor: {
                     type: String,
-                    default: ""
+                    default: "#4d5e6d"
                 }
             },
             data() {
