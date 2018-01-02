@@ -168,7 +168,7 @@
                 },
             },
             mounted() {
-                this.getTooltip()
+                this.initFuse()
             }
         });
     });
