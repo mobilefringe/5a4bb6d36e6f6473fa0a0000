@@ -199,7 +199,6 @@
                 },
                 locationopened(e, loc) {
                     console.log(location.title + ' opened.');
-                    locationopened(e, loc){
                     var self = map.data('mapplic');
                     console.log(self);
                     var el = document.getElementById('svg4538');
@@ -216,7 +215,6 @@
                 //     console.log(current_location);
                     var location = self.getLocationData(loc.id);
                     console.log("old location",location.x + ", " + location.y);
-                }
                 },
                 locationclosed(e) {
                     console.log('Location closed.');
