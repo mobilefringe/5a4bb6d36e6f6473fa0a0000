@@ -75,6 +75,9 @@
                 floor1Stores() {
                     return this.$store.getters.processedStores;
                 },
+                floor2Stores() {
+                    return this.$store.getters.processedStores;
+                },
                 getStoreSource () {
                     // floor1_stores= $.grep(stores, function( n, i ) {
                     //     return ( n.z_coordinate == 1);
