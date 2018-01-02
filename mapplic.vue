@@ -106,6 +106,10 @@
                     type: Boolean,
                     default: true
                 },
+                tooltip_link : {
+                    type: Boolean,
+                    default: true
+                },
                 tooltip: {
                     type: Object,
                     default: this.getTooltip
