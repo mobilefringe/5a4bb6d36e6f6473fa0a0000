@@ -172,10 +172,10 @@
                 this.initMapplic();
                 this.map.on('mapready',this.mapready);
                 this.map.on('locationopened',this.locationopened);
+                this.map.on('locationclosed',this.locationclosed);
+                this.map.on('levelswitched',this.levelswitched);
                 this.map.on('mapready',this.mapready);
-                this.map.on('mapready',this.mapready);
-                this.map.on('mapready',this.mapready);
-                //@mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @levelswitched="levelswitched" @positionchanged="positionchanged"
+                //@mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @locationclosed="levelswitched" @positionchanged="positionchanged"
             },
             watch: {
                 map: function() {
