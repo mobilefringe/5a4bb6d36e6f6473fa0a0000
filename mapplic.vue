@@ -74,6 +74,10 @@
                     type: Boolean,
                     default: true
                 },
+                markers: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
