@@ -58,7 +58,7 @@
                     type: Boolean,
                     default: false
                 },
-                zoom: {
+                markers: {
                     type: Boolean,
                     default: true
                 },
