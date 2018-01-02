@@ -106,6 +106,10 @@
                     type: Boolean,
                     default: true
                 },
+                mousewheel: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
