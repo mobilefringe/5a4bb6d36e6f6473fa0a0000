@@ -184,7 +184,7 @@
                 },
                 initMapplic() {
                     this.map = $('#mapplic').mapplic(this.options);
-                    this.self= this.map.data('mapplic');
+                    this.self = this.map.data('mapplic');
                 },
                 mapready(e, location) {
                     console.log('Map is ready!')
@@ -208,10 +208,10 @@
                     this.self.moveTo(x, y, s, d);
                 },
                 getLocationData(id) {
-                   this.self.getLocationData(id);
+                    this.self.getLocationData(id);
                 },
                 showLocation(id, d) {
-                    this.self.showLocation(id,d);
+                    this.self.showLocation(id, d);
                 },
                 hideLocation() {
                     this.self.hideLocation();
