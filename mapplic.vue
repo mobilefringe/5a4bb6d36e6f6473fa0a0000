@@ -165,6 +165,7 @@
                     	zoombuttons: zoombuttons,
                     	zoomoutclose:zoomoutclose,
                     	hovertip: hovertip,
+                    	tooltip: tooltip
                     	developer: developer,
                     	maxscale: maxscale
                     }
