@@ -1,3 +1,25 @@
+<template>
+  <div class="search-component" v-if="autocomplete">
+    <p class="control has-icon has-icon-right">
+      <input type="search" class="input is-large" :placeholder="placeholder" :suggestionAttribute="suggestionAttribute" @input="onInput($event.target.value)" @keyup.esc="isOpen = false" @blur="isOpen = false" @keydown.down="moveDown" @keydown.up="moveUp" @keydown.enter="select" :value="value">
+      <i class="fa fa-angle-down"></i>
+    </p>
+    <ul v-show="isOpen" class="options-list">
+      <li v-for="(option, index) in result" :class="{'highlighted': index === highlightedPosition}" @mouseenter="highlightedPosition = index" @mousedown="select">
+        <slot name="item" :data="option"></slot>
+      </li>
+    </ul>
+  </div>
+  <div class="search-component" v-else>
+    <p class="control has-icon has-icon-right">
+      <input type="search" class="input is-large" :placeholder="placeholder" @keydown.enter="select" @input="onInput($event.target.value)" :value="value">
+      <i class="fa fa-angle-down"></i>
+    </p>
+  </div>
+</template>
+
+
+
 <style>
     .mapplic-pin{
         /*background-color: transparent!important;    */
