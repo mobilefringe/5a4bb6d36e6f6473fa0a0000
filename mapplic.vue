@@ -181,7 +181,7 @@
                   this.map = $('#mapplic').mapplic(this.options);
                 },
                 mapready (e, location) {
-                    console.log(location.title + ' opened.');
+                    console.log('Map is ready!')
                 },
                 locationopened (e, location) {
                     console.log(location.title + ' opened.');
