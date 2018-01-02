@@ -170,6 +170,7 @@
                     	mousewheel: mousewheel,
                     	fullscreen: fullscreen,
                     	developer: developer,
+                    	fillcolor: fillcolor,
                     	maxscale: maxscale
                     }
                     return options
