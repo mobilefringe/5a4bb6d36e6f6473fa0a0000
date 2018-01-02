@@ -20,6 +20,9 @@
             methods: {
                 changeMode(mode) {
                     this.listMode = mode;
+                },
+                locationopened(){
+                    
                 }
             },
             computed: {
