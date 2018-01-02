@@ -32,7 +32,7 @@ require.config({
         'vue-affix': 'https://cdn.jsdelivr.net/npm/vue-affix@0.2.4/dist/vue-affix',
         'VCalendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min',
         'mousewheel' : 'https://mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel',
-        'mapplic' : 'https://mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel',
+        'mapplic' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1487363250000/mapplic',
         'mousewheel' : 'https://mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel',
     }
 });
