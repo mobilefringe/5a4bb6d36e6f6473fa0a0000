@@ -21,24 +21,7 @@
                 changeMode(mode) {
                     this.listMode = mode;
                 },
-                locationopened(e, loc){
-                    var self = map.data('mapplic');
-                    console.log(self);
-                    var el = document.getElementById('svg4538');
-                    var myWidth = el.getBoundingClientRect().width;
-                    var myHeight = el.getBoundingClientRect().height;
-                    console.log(myWidth,myHeight);
-                    // console.log(self.getLocationData(loc.id));
-                	// location grants full access to the location
-                    console.log(loc ,' opened.');
-                    console.log($(".mapplic-coordinates-x").text());
-                    console.log($(".mapplic-coordinates-y").text());
-                    
-                //     var current_location = loc.el[0].getBBox();
-                //     console.log(current_location);
-                    var location = self.getLocationData(loc.id);
-                    console.log("old location",location.x + ", " + location.y);
-                }
+                
             },
             computed: {
                 property() {
