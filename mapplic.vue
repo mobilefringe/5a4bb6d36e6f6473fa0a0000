@@ -229,8 +229,8 @@
                 positionchanged(e, self) {
                     if(self) {
                         
-                    }
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
+                    }
                 },
                 switchLevel(target) {
                     this.self.switchLevel(target);
