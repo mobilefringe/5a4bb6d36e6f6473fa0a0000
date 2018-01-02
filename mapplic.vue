@@ -113,11 +113,7 @@
                 fullscreen: {
                     type: Boolean,
                     default: false
-                },
-                developer: {
-                    type: Boolean,
-                    default: true
-                },
+                }
             },
             data() {
                 return {
