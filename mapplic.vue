@@ -189,7 +189,7 @@
                     return  { thumb: true, desc: true, link: true };
                 },
                 initMapplic () {
-                  this.map = $('#mapplic').mapplic(this.option);
+                  this.map = $('#mapplic').mapplic(this.options);
                 }
             },
             mounted() {
