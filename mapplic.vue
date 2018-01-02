@@ -123,7 +123,7 @@
                     default: 'tooltip'
                 },
                 maxscale: {
-                    type: Boolean,
+                    type: Number,
                     default: true
                 },
             },
