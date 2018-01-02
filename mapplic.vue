@@ -177,7 +177,7 @@
             methods: {
                 getTooltip () {
                     //   { thumb: true, desc: true, link: true }  
-                    return  { thumb: true, desc: true, link: true };
+                    return  { thumb: this.tooltip_thumb, desc: true, link: true };
                 },
             },
             mounted() {
