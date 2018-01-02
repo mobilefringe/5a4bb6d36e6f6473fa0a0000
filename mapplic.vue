@@ -62,7 +62,7 @@
                     type: Boolean,
                     default: true
                 },
-                markers: {
+                minimap: {
                     type: Boolean,
                     default: true
                 },
