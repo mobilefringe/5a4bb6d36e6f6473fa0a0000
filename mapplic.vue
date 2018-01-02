@@ -189,10 +189,10 @@
                 locationclosed (e, location) {
                     console.log(location.title + ' opened.');
                 },
-                locationclosed (e, location) {
+                levelswitched (e, location) {
                     console.log(location.title + ' opened.');
                 },
-                locationclosed (e, location) {
+                levelswitched (e, location) {
                     console.log(location.title + ' opened.');
                 },
             },
