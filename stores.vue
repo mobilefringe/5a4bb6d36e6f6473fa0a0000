@@ -73,7 +73,7 @@
                     return this.$store.getters.processedStores;
                 },
                 floor1Stores() {
-                    return this.$store.getters.processedStores;
+                    
                 },
                 floor2Stores() {
                     return this.$store.getters.processedStores;
