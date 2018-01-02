@@ -114,7 +114,7 @@
                     type: Boolean,
                     default: false
                 },
-                zoombuttons: {
+                developer: {
                     type: Boolean,
                     default: true
                 },
