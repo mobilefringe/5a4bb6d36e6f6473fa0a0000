@@ -51,7 +51,7 @@
                     default: 1000
                 },
                 landmark: {
-                    type: Array,
+                    type: String,
                     default: null
                 },
                 loadingText: {
