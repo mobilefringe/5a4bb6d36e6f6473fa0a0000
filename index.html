@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-vue-meta-server-rendered>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+        <link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1510935230000/mapplic.css" rel="stylesheet">
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+        <link href="//unpkg.com/v-calendar/lib/v-calendar.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        
+    </head>
+    <body>
+        <div id="app" v-cloak >
+            <div id="main-container">
+                <header :class="{ home: !isHomePage }">
+                    <div class="page-container">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                <router-link to="/" active-class="active" exact>
+                                    <img class="header-logo" src="//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1511803959000/northpark-logo.png"  alt="Northpark Property Logo">
+                                </router-link>
+                            </div>
+                            <div class="col-xs-6 col-sm-9">
+                                <div class="menu-icons">
+                                    <div @click="show_search = !show_search" :class="{ open: show_search }" id="search-icon">
+                                        <span class="circle"></span>
+                                        <span class="handle"></span>
+                                    </div>
+                                    <div @click="show_menu = !show_menu" :class="{ open: show_menu }" id="menu-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="header-breadcrumb-container">
+                                        <breadcrumbs>{{ breadcrumb }}</breadcrumbs>
+                                        <ul v-show="showStoresMenu" class="breadcrumb-menu">
+                                            <router-link tag="li" to="/stores" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Store Directory</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/dine" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Restaurants & Eateries</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="https://www.amctheatres.com/movie-theatres/dallas-ft-worth/amc-northpark-15">
+                                                <a class="main-menu-link"><h5>AMC</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/new-doors" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>New Doors</h5></a>
+                                            </router-link>
+                                        </ul>
+                                        <ul v-show="showArtMenu" class="breadcrumb-menu">
+                                            <router-link tag="li" to="/art" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Collection Overview</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/art/special-exhibition" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Special Exhibition</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/art/photo-gallery" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Photo Gallery</h5></a>
+                                            </router-link>
+                                        </ul>
+                                        <ul v-show="showVisitMenu" class="breadcrumb-menu">
+                                            <router-link tag="li" to="/pages/northpark-parking-valet-page" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Valet & Parking</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/pages/northpark-concierge-services" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Concierge</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/pages/northpark-northpark-gold-gift-cards" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>NorthPark Gold & Gift Cards</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/visit/tourism" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Tourism</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/pages/northpark-contact-us" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Contact</h5></a>
+                                            </router-link>
+                                        </ul>
+                                        <ul v-show="showStoryMenu" class="breadcrumb-menu">
+                                            <router-link tag="li" to="/our-story" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>NorthPark Experience</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/our-story/history" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>History</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/our-story/landscaping" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Landscaping</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/our-story/architecture" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Architecture</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/our-story/photo-gallery" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Photo Gallery</h5></a>
+                                            </router-link>
+                                        </ul>
+                                        <ul v-show="showHolidayMenu" class="breadcrumb-menu">
+                                            <router-link tag="li" to="/holiday" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Holiday Overview</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/holiday/performances" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Performances</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/holiday/events" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Events</h5></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/holiday/activities" active-class="active" exact>
+                                                <a class="main-menu-link"><h5>Activities</h5></a>
+                                            </router-link>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div v-if="show_menu" class="menu-container">
+                                    <div class="menu-content">
+                                        <ul class="menu">
+                                            <router-link tag="li" to="/stores" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Shops & Dining</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/events" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Events</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/art" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Art</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/news" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">News</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/visit" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Visit</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/our-story" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Our Story</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/magazine" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">The Magazine</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/hours" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Hours</h1></a>
+                                            </router-link>
+                                            <router-link tag="li" to="/holiday" active-class="active" exact>
+                                                <a class="main-menu-link"><h1 @click="show_menu = !show_menu">Holiday</h1></a>
+                                            </router-link>
+                                        </ul>
+                                        <div class="menu-newsletter-container">
+                                            <form action="https://mobilefringe.createsend.com/t/d/s/jhithd/" method="post">
+                                                <input class="" id="fieldEmail" name="cm-jhithd-jhithd" type="email" required placeholder="Sign Up for Email Newsletter"/>
+                                                <button class="news-submit" type="submit"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                            </form>
+                                        </div>
+                                        <div class="menu-social-container">
+                                            <a href="https://www.facebook.com/northparkcenter" target="_blank">
+                                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="https://twitter.com/NorthParkCenter" target="_blank">
+                                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                            </a>  
+                                            <a href="https://www.pinterest.ca/northparkcenter" target="_blank">    
+                                                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                            </a>    
+                                            <a href="https://www.youtube.com/user/NorthParkCenter" target="_blank">    
+                                                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                            </a>    
+                                            <a href="https://www.instagram.com/northparkcenter/" target="_blank">    
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" target="_blank">  
+                                                <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <div class="menu-address-container">
+                                            <p v-if="property">{{property.address1}}<br>
+                                                {{property.city}}, {{property.province_state}} {{property.postal_code}} <br>
+                                                {{property.contact_phone}}
+                                            </p>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-if="show_search" class="search-container">
+                                    <div class="search-content">
+                                        <search-component v-model="search" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+                                            <template slot="item" scope="option">
+                                                <article class="media">
+                                                    <p @click="show_search = !show_search">{{ option.data.name }}</p>
+                                                </article>
+                                            </template>
+                                        </search-component>
+                                        <div class="menu-social-container">
+                                            <a href="https://www.facebook.com/northparkcenter" target="_blank">
+                                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="https://twitter.com/NorthParkCenter" target="_blank">
+                                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                            </a>  
+                                            <a href="https://www.pinterest.ca/northparkcenter" target="_blank">    
+                                                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                            </a>    
+                                            <a href="https://www.youtube.com/user/NorthParkCenter" target="_blank">    
+                                                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                            </a>    
+                                            <a href="https://www.instagram.com/northparkcenter/" target="_blank">    
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" target="_blank">  
+                                                <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <div class="menu-address-container">
+                                            <p v-if="property">{{property.address1}}<br>
+                                                {{property.city}}, {{property.province_state}} {{property.postal_code}} <br>
+                                                {{property.contact_phone}}
+                                            </p>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="loading-container" v-if="!dataLoaded">
+                <vue-simple-spinner  size="huge" message="One moment please..."></vue-simple-spinner>    
+            </div>
+            <transition name="fade">
+                <router-view v-if="dataLoaded"></router-view>
+            </transition>
+            <footer v-show="isHomePage">
+                <div class="page-container">
+                    <div class="footer-nav">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="hidden-mobile">
+                                    <router-link tag="li" to="/stores">
+                                        <a>Shops & Dining</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/events">
+                                        <a>Events</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/art">
+                                        <a>Art</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/news">
+                                        <a>News</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/visit">
+                                        <a>Visit</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/our-story">
+                                        <a>Our Story</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/magazine">
+                                        <a>The Magazine</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/hours">
+                                        <a>Hours</a>
+                                    </router-link>
+                                    <li></li>
+                                </ul>    
+                            </div>
+                            <div class="col-sm-12 col-md-8">
+                                <img class="footer-logo" src="//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1511801610000/northpark-logo-white.png"  alt="Northpark Property Logo">
+                                <p class="footer-address" v-if="property">{{property.address1}} - {{property.city}}, {{property.province_state}} - {{property.contact_phone}}</p>
+                                <div class="footer-social-container">
+                                    <a href="https://www.facebook.com/northparkcenter" target="_blank">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://twitter.com/NorthParkCenter" target="_blank">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>  
+                                    <a href="https://www.pinterest.ca/northparkcenter" target="_blank">    
+                                        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                    </a>    
+                                    <a href="https://www.youtube.com/user/NorthParkCenter" target="_blank">    
+                                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                    </a>    
+                                    <a href="https://www.instagram.com/northparkcenter/" target="_blank">    
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" target="_blank">  
+                                        <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copy hidden-mobile">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Site Map</li>
+                                    <router-link tag="li" to="/" active-class="active" exact>
+                                        <a>Mobile App</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/pages/northpark-terms-of-use" active-class="active" exact>
+                                        <a>Terms of Use</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/pages/northpark-northpark-center-code-of-conduct" active-class="active" exact>
+                                        <a>Code of Conduct</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/pages/northpark-privacy-policy" active-class="active" exact>
+                                        <a>Privacy Policy</a>
+                                    </router-link>
+                                    <router-link tag="li" to="/contact" active-class="active" exact>
+                                        <a>Contact Us</a>
+                                    </router-link>
+                                    <router-link tag="li" to="http://northparkcenter.com/login" active-class="active" exact>
+                                        <a>Admin Login</a>
+                                    </router-link>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>&#169; {{copyright_year}} Copyright Northpark Partners LP</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+    </body>
+</html>
