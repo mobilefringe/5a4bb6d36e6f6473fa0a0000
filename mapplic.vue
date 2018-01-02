@@ -1,6 +1,6 @@
 <template>
   <div style="position:relative; margin: auto;width: 100%;overflow: hidden;">
-    <div id="mapplic" class="mapplic" @mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @levelswitched="levelswitched" @positionchanged="positionchanged"></div>
+    <div id="mapplic" class="mapplic"></div>
 </div>
 </template>
 
@@ -170,6 +170,7 @@
             },
             mounted() {
                 this.initMapplic();
+                this.map.
             },
             watch: {
                 map: function() {
