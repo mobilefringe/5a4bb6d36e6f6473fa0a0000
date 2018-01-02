@@ -78,7 +78,7 @@
                     type: Boolean,
                     default: false
                 },
-                markers: {
+                deeplinking: {
                     type: Boolean,
                     default: true
                 },
