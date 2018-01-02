@@ -220,7 +220,7 @@
                 },
             },
             mounted() {
-                this.initMapplic()
+                this.initMapplic(),
             },
             beforeDestroy: function() {
                 this.map.destroy();
