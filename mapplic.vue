@@ -99,7 +99,7 @@
                     default: false
                 },
                 tooltip: {
-                    type: Boolean,
+                    type: Object,
                     default: true
                 },
             },
