@@ -151,7 +151,7 @@
                 */
                 options() {
                     var options = {
-                        source: this.source,
+                        source: this.store_source,
                     	height: 480,
                     	minimap: false,
                     	sidebar: true,
