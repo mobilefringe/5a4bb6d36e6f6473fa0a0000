@@ -82,7 +82,7 @@
                 floor2Stores() {
                     return _.filter(this.allStores, ['z_coordinate', 2]);
                 },
-                processedCategories() {
+                allCategories() {
                     return this.$store.getters.processedCategories;
                 },
                 getStoreSource () {
