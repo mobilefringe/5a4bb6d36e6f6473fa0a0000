@@ -122,6 +122,10 @@
                     type: String,
                     default: 'tooltip'
                 },
+                maxscale: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
