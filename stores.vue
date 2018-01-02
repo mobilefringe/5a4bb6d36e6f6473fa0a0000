@@ -83,15 +83,7 @@
                     return _.filter(this.allStores, ['z_coordinate', 2]);
                 },
                 getStoreSource () {
-                    // floor1_stores= $.grep(stores, function( n, i ) {
-                    //     return ( n.z_coordinate == 1);
-                    // });
-                    // var floor2_stores= $.grep(stores, function( n, i ) {
-                    //     return ( n.z_coordinate == 2);
-                    // });
-                    
-                    // // console.log(floor1_stores,floor2_stores);
-                    // var mall_json = {};
+                    var mall_json = {};
                     // var landmarks = {};
                     // mall_json.mapwidth = "1000";
                     // mall_json.mapheight = "1000";
