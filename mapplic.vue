@@ -153,6 +153,7 @@
                     var options = {
                         source: this.store_source,
                     	height: height,
+                    	landmark: landmark
                     	minimap: minimap,
                     	sidebar: sidebar,
                     	hovertip: hovertip,
