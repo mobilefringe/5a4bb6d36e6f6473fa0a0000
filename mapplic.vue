@@ -1,5 +1,5 @@
 <template>
-  <div style="position:relative;height:900px;overflow:hidden;">
+  <div style="position:relative;">
     <div id="mapplic" class="mapplic" @mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @levelswitched="levelswitched" @positionchanged="positionchanged"></div>
 </div>
 </template>
