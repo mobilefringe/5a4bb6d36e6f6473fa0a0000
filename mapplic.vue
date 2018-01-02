@@ -133,11 +133,7 @@
             },
             data() {
                 return {
-                    isOpen: false,
-                    highlightedPosition: 0,
-                    //search: '',
                     map: null,
-                    result: [],
                     developer: true
                 }
             },
