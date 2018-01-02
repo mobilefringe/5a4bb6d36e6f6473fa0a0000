@@ -100,7 +100,7 @@
                 },
                 tooltip: {
                     type: Object,
-                    default: this.tooltip
+                    default: this.getTooltip
                 },
             },
             data() {
