@@ -114,6 +114,10 @@
                     type: Boolean,
                     default: false
                 },
+                zoombuttons: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
