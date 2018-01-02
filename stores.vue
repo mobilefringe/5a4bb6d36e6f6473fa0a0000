@@ -85,8 +85,8 @@
                 getStoreSource () {
                     var mall_json = {};
                     var landmarks = {};
-                    // mall_json.mapwidth = "1000";
-                    // mall_json.mapheight = "1000";
+                    mall_json.mapwidth = "1000";
+                    mall_json.mapheight = "1000";
                     // mall_json.categories=[]; 
                     // var store_cats = getStoreCategories();
                     // // console.log(store_cats);
