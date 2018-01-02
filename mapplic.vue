@@ -170,7 +170,7 @@
                 }
             },
             mounted() {
-                this.initMapplic(),
+                this.initMapplic();
             },
             watch: {
                 map: function() {
