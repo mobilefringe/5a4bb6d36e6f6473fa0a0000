@@ -73,7 +73,7 @@
                     return this.$store.getters.processedStores;
                 },
                 floor1Stores() {
-                    return _.filter(this.allStores, ['z_coordinate', false]);
+                    return _.filter(this.allStores, ['z_coordinate', 1]);
                 },
                 floor2Stores() {
                     
