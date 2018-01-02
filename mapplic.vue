@@ -99,7 +99,12 @@
                     default: false
                 },
                 tooltip_thumb: {
-                //   { thumb: true, desc: true, link: true }  
+                    type: Boolean,
+                    default: true
+                },
+                tooltip_desc : {
+                    type: Boolean,
+                    default: true
                 },
                 tooltip: {
                     type: Object,
