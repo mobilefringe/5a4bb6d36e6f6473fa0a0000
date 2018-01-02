@@ -180,9 +180,15 @@
                 initMapplic () {
                   this.map = $('#mapplic').mapplic(this.options);
                 },
+                mapready (e, location) {
+                    console.log(location.title + ' opened.');
+                },
                 locationopened (e, location) {
                     console.log(location.title + ' opened.');
-                }
+                },
+                locationclosed (e, location) {
+                    console.log(location.title + ' opened.');
+                },
             },
             mounted() {
                 this.initMapplic()
