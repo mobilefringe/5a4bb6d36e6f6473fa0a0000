@@ -98,6 +98,10 @@
                     type: Boolean,
                     default: false
                 },
+                markers: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
