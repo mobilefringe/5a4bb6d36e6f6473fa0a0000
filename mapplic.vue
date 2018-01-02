@@ -168,6 +168,10 @@
                     return options
                 }
             },
+            
+            mounted() {
+                this.initMapplic(),
+            },
             watch: {
                 map: function() {
                     this.$emit('updateMap', this.map);
