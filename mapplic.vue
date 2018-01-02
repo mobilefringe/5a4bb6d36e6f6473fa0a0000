@@ -158,6 +158,7 @@
                     	markers: markers,
                     	minimap: minimap,
                     	sidebar: sidebar,
+                    	search: search
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
