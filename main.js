@@ -33,7 +33,8 @@ require.config({
         'VCalendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min',
         'mousewheel' : 'https://mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel',
         'mapplic' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1487363250000/mapplic',
-        'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min'
+        'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min',
+        'mapplic-map'
     }
 });
 
