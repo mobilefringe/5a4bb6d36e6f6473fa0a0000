@@ -151,19 +151,13 @@
                 */
                 options() {
                     var options = {
-                        caseSensitive: this.caseSensitive,
-                        includeScore: this.includeScore,
-                        includeMatches: this.includeMatches,
-                        tokenize: this.tokenize,
-                        matchAllTokens: this.matchAllTokens,
-                        findAllMatches: this.findAllMatches,
-                        shouldSort: this.shouldSort,
-                        threshold: this.threshold,
-                        location: this.location,
-                        distance: this.distance,
-                        maxPatternLength: this.maxPatternLength,
-                        minMatchCharLength: this.minMatchCharLength,
-                        keys: this.keys
+                        source: 'map-data.json',
+                    	height: 480,
+                    	minimap: false,
+                    	sidebar: true,
+                    	hovertip: true,
+                    	developer: false,
+                    	maxscale: 3
                     }
                     if (this.id !== '') {
                         options.id = this.id
