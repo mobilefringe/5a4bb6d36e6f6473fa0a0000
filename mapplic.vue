@@ -200,7 +200,7 @@
                 }
             },
             mounted() {
-                this.initFuse()
+                this.initMapplic()
             }
         });
     });
