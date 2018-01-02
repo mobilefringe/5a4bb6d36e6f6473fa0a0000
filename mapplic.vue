@@ -171,6 +171,7 @@
             mounted() {
                 this.initMapplic();
                 this.map.
+                //@mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @levelswitched="levelswitched" @positionchanged="positionchanged"
             },
             watch: {
                 map: function() {
