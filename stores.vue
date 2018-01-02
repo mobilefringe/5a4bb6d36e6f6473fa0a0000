@@ -52,7 +52,7 @@
                 }
             },
             mounted() {
-                console.log("floor1Stores",floor1Stores);
+                console.log("floor1Stores",this.floor1Stores);
                 console.log("floor2Stores",floor2Stores);
             },
             methods: {
