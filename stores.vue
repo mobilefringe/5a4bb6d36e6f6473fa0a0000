@@ -43,7 +43,7 @@
 <link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1510935230000/mapplic.css" rel="stylesheet">
 <link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
 <script>
-    define(["Vue","mapplic-map"], function(Vue) {
+    define(["Vue","vue!mapplic-map"], function(Vue) {
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
