@@ -117,7 +117,11 @@
                 fillcolor: {
                     type: String,
                     default: "#4d5e6d"
-                }
+                },
+                zoombuttons: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
