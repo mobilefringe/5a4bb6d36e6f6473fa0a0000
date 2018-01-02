@@ -1,21 +1,8 @@
 <template>
-  <div class="search-component" v-if="autocomplete">
-    <p class="control has-icon has-icon-right">
-      <input type="search" class="input is-large" :placeholder="placeholder" :suggestionAttribute="suggestionAttribute" @input="onInput($event.target.value)" @keyup.esc="isOpen = false" @blur="isOpen = false" @keydown.down="moveDown" @keydown.up="moveUp" @keydown.enter="select" :value="value">
-      <i class="fa fa-angle-down"></i>
-    </p>
-    <ul v-show="isOpen" class="options-list">
-      <li v-for="(option, index) in result" :class="{'highlighted': index === highlightedPosition}" @mouseenter="highlightedPosition = index" @mousedown="select">
-        <slot name="item" :data="option"></slot>
-      </li>
-    </ul>
-  </div>
-  <div class="search-component" v-else>
-    <p class="control has-icon has-icon-right">
-      <input type="search" class="input is-large" :placeholder="placeholder" @keydown.enter="select" @input="onInput($event.target.value)" :value="value">
-      <i class="fa fa-angle-down"></i>
-    </p>
-  </div>
+  <div style="position:relative;height:900px;overflow:hidden;">
+    <div id="mapplic" class="mapplic"></div>
+    <!--<img src="//www.mallmaverick.com/system/site_images/photos/000/034/516/original/Northpark_-_Map_-_Floor_1_-modifed_for_Mapplic.svg" class="" alt="" style="visibility:hidden;position:absolute;top:0;left:0;z-index:-1;">-->
+</div>
 </template>
 
 
