@@ -203,7 +203,6 @@
                 },
                 switchLevel(target) {
                     this.self.switchLevel(target);
-                    console.log();
                 },
                 moveTo(x, y, s, d) {
                     this.self.moveTo(x, y, s, d);
