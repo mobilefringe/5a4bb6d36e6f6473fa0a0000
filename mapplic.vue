@@ -170,11 +170,11 @@
             },
             mounted() {
                 this.initMapplic();
-                this.map.on('mapready',this.mapready);
-                this.map.on('locationopened',this.locationopened);
-                this.map.on('locationclosed',this.locationclosed);
-                this.map.on('levelswitched',this.levelswitched);
-                this.map.on('positionchanged',this.positionchanged);
+                this.map.on('mapready',this.mapready());
+                this.map.on('locationopened',this.locationopened());
+                this.map.on('locationclosed',this.locationclosed());
+                this.map.on('levelswitched',this.levelswitched());
+                this.map.on('positionchanged',this.positionchanged());
             },
             watch: {
                 map: function() {
