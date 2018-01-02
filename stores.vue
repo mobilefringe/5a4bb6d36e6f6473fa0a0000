@@ -76,7 +76,7 @@
                     
                 },
                 floor2Stores() {
-                    return this.$store.getters.processedStores;
+                    
                 },
                 getStoreSource () {
                     // floor1_stores= $.grep(stores, function( n, i ) {
