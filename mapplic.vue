@@ -90,7 +90,7 @@
                     type: Boolean,
                     default: true
                 },
-                markers: {
+                zoomoutclose: {
                     type: Boolean,
                     default: true
                 },
