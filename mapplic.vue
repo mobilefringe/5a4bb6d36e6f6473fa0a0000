@@ -98,18 +98,6 @@
                     type: Boolean,
                     default: false
                 },
-                tooltip_thumb: {
-                    type: Boolean,
-                    default: true
-                },
-                tooltip_desc : {
-                    type: Boolean,
-                    default: true
-                },
-                tooltip_link : {
-                    type: Boolean,
-                    default: true
-                },
                 tooltip: {
                     type: Object,
                     default: this.getTooltip
