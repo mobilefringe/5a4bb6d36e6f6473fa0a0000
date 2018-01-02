@@ -139,7 +139,7 @@
                         //     return;
                         // }
                     });
-                    // mall_json.levels.push(floor_1);
+                    mall_json.levels.push(floor_1);
                     // // need to add the following for each floor we want to configure.
                     // var floor_2 ={};
                     // floor_2.id = "second-floor";
