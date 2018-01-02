@@ -51,6 +51,9 @@
                     listMode: "alphabetical",
                 }
             },
+            mounted() {
+                
+            },
             methods: {
                 changeMode (mode) {
                     this.listMode = mode;
