@@ -52,7 +52,7 @@
                 }
             },
             mounted() {
-                
+                console.log("floor1Stores",floor1Stores);
             },
             methods: {
                 changeMode (mode) {
