@@ -102,6 +102,10 @@
                     type: Object,
                     default: this.getTooltip
                 },
+                smartip: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
