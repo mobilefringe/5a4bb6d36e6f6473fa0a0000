@@ -104,6 +104,7 @@
                 tooltip: {
                     type: Object,
                     default: this.getTooltip
+                    //   { thumb: true, desc: true, link: true }  
                 },
             },
             data() {
