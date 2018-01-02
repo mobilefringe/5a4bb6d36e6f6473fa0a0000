@@ -134,6 +134,7 @@
             data() {
                 return {
                     map: null,
+                    self: null,
                     developer: true
                 }
             },
