@@ -56,7 +56,7 @@
                 },
                 mapfill: {
                     type: Boolean,
-                    default: true
+                    default: false
                 },
                 zoom: {
                     type: Boolean,
