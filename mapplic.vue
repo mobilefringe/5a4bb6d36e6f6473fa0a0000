@@ -165,15 +165,15 @@
                     	zoombuttons: this.zoombuttons,
                     	zoomoutclose: this.zoomoutclose,
                     	hovertip: this.hovertip,
-                    	tooltip: tooltip,
-                    	smartip: smartip,
-                    	mousewheel: mousewheel,
-                    	fullscreen: fullscreen,
-                    	developer: developer,
-                    	fillcolor: fillcolor,
-                    	action: action,
-                    	maxscale: maxscale,
-                    	zoom: zoom
+                    	tooltip: this.tooltip,
+                    	smartip: this.smartip,
+                    	mousewheel: this.mousewheel,
+                    	fullscreen: this.fullscreen,
+                    	developer: this.developer,
+                    	fillcolor: this.fillcolor,
+                    	action: this.action,
+                    	maxscale: this.maxscale,
+                    	zoom: this.zoom
                     }
                     return options
                 }
