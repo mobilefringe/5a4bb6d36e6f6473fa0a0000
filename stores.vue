@@ -87,17 +87,18 @@
                     var landmarks = {};
                     mall_json.mapwidth = "1000";
                     mall_json.mapheight = "1000";
-                    // mall_json.categories=[]; 
-                    // var store_cats = getStoreCategories();
-                    // // console.log(store_cats);
-                    // $.each(store_cats, function(key,val){
-                    //     var temp_val = {};
-                    //     temp_val.id = val.id;
-                    //     temp_val.title= val.name;
-                    //     temp_val.color= "#b7a6bd";
-                    //     temp_val.show="true";
-                    //     mall_json.categories.push(temp_val);
-                    // });
+                    mall_json.categories=[]; 
+                    var store_cats = getStoreCategories();
+                    // console.log(store_cats);
+                    $.each(store_cats, function(key,val){
+                        var temp_val = {};
+                        temp_val.id = val.id;
+                        temp_val.title= val.name;
+                        temp_val.color= "#b7a6bd";
+                        temp_val.show="true";
+                        mall_json.categories.push(temp_val);
+                    });
+                    // this.floor1Stores
                     // mall_json.levels=[]; 
                     // // need to add the following for each floor we want to configure.
                     // var floor_1 ={};
