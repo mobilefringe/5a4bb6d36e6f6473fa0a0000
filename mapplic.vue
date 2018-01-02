@@ -184,6 +184,7 @@
                 },
                 initMapplic() {
                     this.map = $('#mapplic').mapplic(this.options);
+                    this.self== map.data('mapplic');
                 },
                 mapready(e, location) {
                     console.log('Map is ready!')
