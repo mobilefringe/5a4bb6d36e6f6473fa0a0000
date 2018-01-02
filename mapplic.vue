@@ -169,8 +169,7 @@
             },
             watch: {
                 map : function () {
-                    this.$emit('updateMap', this.map);  
-                    // console.log(this.$on('setMarker',this.addMarker));
+                    this.$emit('updateMap', this.map);
                 }
             },
             methods: {
