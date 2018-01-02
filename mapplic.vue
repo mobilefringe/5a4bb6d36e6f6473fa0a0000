@@ -99,7 +99,7 @@
                     default: false
                 },
                 tooltip_thumb: {
-                    
+                //   { thumb: true, desc: true, link: true }  
                 },
                 tooltip: {
                     type: Object,
