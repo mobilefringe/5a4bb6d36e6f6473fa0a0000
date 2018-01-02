@@ -175,7 +175,7 @@
                     // });
                     
                     // mall_json.levels.push(floor_2);
-                    return mall_json;
+                    return mall_json
                 }
             }
         });
