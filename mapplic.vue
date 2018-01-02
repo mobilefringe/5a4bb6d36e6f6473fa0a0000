@@ -152,12 +152,12 @@
                 options() {
                     var options = {
                         source: this.store_source,
-                    	height: 480,
-                    	minimap: false,
-                    	sidebar: true,
-                    	hovertip: true,
-                    	developer: false,
-                    	maxscale: 3
+                    	height: height,
+                    	minimap: minimap,
+                    	sidebar: sidebar,
+                    	hovertip: hovertip,
+                    	developer: developer,
+                    	maxscale: maxscale
                     }
                     return options
                 }
