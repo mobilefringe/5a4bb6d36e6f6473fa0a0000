@@ -126,6 +126,10 @@
                     type: Number,
                     default: 4
                 },
+                zoom: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
