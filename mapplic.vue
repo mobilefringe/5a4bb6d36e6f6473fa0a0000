@@ -166,7 +166,7 @@
                     	zoomoutclose:zoomoutclose,
                     	hovertip: hovertip,
                     	tooltip: tooltip,
-                    	smartip: smartip
+                    	smartip: smartip,
                     	developer: developer,
                     	maxscale: maxscale
                     }
