@@ -224,7 +224,6 @@
                 levelswitched(e, level) {
                     if(level) {
                         console.log('Switched to ' + level + ' level.');
-                        
                     }
                 },
                 positionchanged(e, self) {
