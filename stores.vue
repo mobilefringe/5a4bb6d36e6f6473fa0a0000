@@ -101,7 +101,7 @@
                         mall_json.categories.push(temp_val);
                     });
                     // this.floor1Stores
-                    // mall_json.levels=[]; 
+                    mall_json.levels=[]; 
                     // // need to add the following for each floor we want to configure.
                     // var floor_1 ={};
                     // floor_1.id = "first-floor";
