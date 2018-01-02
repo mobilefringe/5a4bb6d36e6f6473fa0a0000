@@ -214,7 +214,7 @@
                     self.showLocation(id,d);
                 },
                 hideLocation() {
-                     self.hideLocation();
+                    this.self.hideLocation();
                 },
                 updateLocation(id) {
                     this.self.updateLocation(id);
