@@ -192,7 +192,7 @@
                     //   { thumb: true, desc: true, link: true }  
                     return  { thumb: true, desc: true, link: true };
                 },
-                initFuse () {
+                initMapplic () {
                   this.fuse = new Fuse(this.list, this.options);
                   if (this.defaultAll) {
                     this.result = this.list
