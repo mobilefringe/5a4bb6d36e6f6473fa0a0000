@@ -170,7 +170,7 @@
             },
             mounted() {
                 this.initMapplic();
-                this.map.
+                this.map.on('mapready')
                 //@mapready="mapready" @locationopened="locationopened" @locationclosed="locationclosed" @levelswitched="levelswitched" @positionchanged="positionchanged"
             },
             watch: {
