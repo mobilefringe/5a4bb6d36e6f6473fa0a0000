@@ -98,6 +98,9 @@
                     type: Boolean,
                     default: false
                 },
+                tooltip_thumb: {
+                    
+                },
                 tooltip: {
                     type: Object,
                     default: this.getTooltip
