@@ -171,7 +171,7 @@
             mounted() {
                 this.initMapplic();
                 this.map.on('mapready',this.mapready);
-                this.map.on('mapready',this.mapready);
+                this.map.on('locationopened',this.locationopened);
                 this.map.on('mapready',this.mapready);
                 this.map.on('mapready',this.mapready);
                 this.map.on('mapready',this.mapready);
