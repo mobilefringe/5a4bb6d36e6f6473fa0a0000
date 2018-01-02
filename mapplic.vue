@@ -171,6 +171,7 @@
                     	fullscreen: fullscreen,
                     	developer: developer,
                     	fillcolor: fillcolor,
+                    	action: action,
                     	maxscale: maxscale
                     }
                     return options
