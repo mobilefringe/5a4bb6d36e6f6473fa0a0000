@@ -40,9 +40,8 @@
         <!--</div>-->
     </div>
 </template>
-
 <script>
-    define(["Vue","vue!mapplic-map"], function(Vue, MapplicComponent) {
+    define(["Vue", "vue!mapplic-map"], function(Vue, MapplicComponent) {
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -52,16 +51,16 @@
                 }
             },
             mounted() {
-                console.log("floor1Stores",this.floor1Stores);
+                console.log("floor1Stores", this.floor1Stores);
                 console.log("floor2Stores", this.floor2Stores);
             },
             methods: {
-                changeMode (mode) {
+                changeMode(mode) {
                     this.listMode = mode;
                 }
             },
             computed: {
-                property(){
+                property() {
                     return this.$store.getters.getProperty;
                 },
                 timezone() {
@@ -90,50 +89,50 @@
                     var landmarks = {};
                     mall_json.mapwidth = "1000";
                     mall_json.mapheight = "1000";
-                    mall_json.categories=[]; 
+                    mall_json.categories = [];
                     // console.log(store_cats);
                     _.forEach(this.allCategories, function(value, key) {
                         var temp_val = {};
                         temp_val.id = val.id;
-                        temp_val.title= val.name;
-                        temp_val.color= "#b7a6bd";
-                        temp_val.show="true";
+                        temp_val.title = val.name;
+                        temp_val.color = "#b7a6bd";
+                        temp_val.show = "true";
                         mall_json.categories.push(temp_val);
                     });
                     // this.floor1Stores
-                    mall_json.levels=[]; 
+                    mall_json.levels = [];
                     // // need to add the following for each floor we want to configure.
-                    var floor_1 ={};
+                    var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Floor 1";
                     floor_1.map = "//www.mallmaverick.com/system/site_images/photos/000/035/861/original/NorthPark_-_Dec-15-2017_-_Floor_1.svg;
                     //"//www.mallmaverick.com/system/site_images/photos/000/034/516/original/Northpark_-_Map_-_Floor_1_-modifed_for_Mapplic.svg";
                     floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
-                    floor_1.show="true";
+                    floor_1.show = "true";
                     floor_1.locations = [];
                     _.forEach(this.floor1Stores, function(value, key) {
                         //for testing limiting the store numbers to this
                         // if(key < 10) {
-                            var temp_val = {};
-                            temp_val.id = val.svgmap_region;
-                            temp_val.title= val.name;
-                            temp_val.about = $.trim(val.description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";;
-                            temp_val.category = val.categories[1];
-                            // temp_val.thumbnail = "";
-                            temp_val.link = "/stores/"+val.slug;
-                            temp_val.pin = "hidden";
-                            // temp_val.action = "none";
-                            temp_val.fill = "#";
-                            // if(val.store_front_url_abs.indexOf("missing") == -1){
-                            //     temp_val.thumbnail=val.store_front_url_abs;
-                            // }
-                            //get svg's wifth/height by checking the map
-                            var svg_width =  1530;
-                            var svg_height = 1358;
-                            
-                            temp_val.x = val.x_coordinate/svg_width;
-                            temp_val.y = val.y_coordinate/svg_height;
-                            floor_1.locations.push(temp_val);
+                        var temp_val = {};
+                        temp_val.id = val.svgmap_region;
+                        temp_val.title = val.name;
+                        temp_val.about = $.trim(val.description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";;
+                        temp_val.category = val.categories[1];
+                        // temp_val.thumbnail = "";
+                        temp_val.link = "/stores/" + val.slug;
+                        temp_val.pin = "hidden";
+                        // temp_val.action = "none";
+                        temp_val.fill = "#";
+                        // if(val.store_front_url_abs.indexOf("missing") == -1){
+                        //     temp_val.thumbnail=val.store_front_url_abs;
+                        // }
+                        //get svg's wifth/height by checking the map
+                        var svg_width = 1530;
+                        var svg_height = 1358;
+
+                        temp_val.x = val.x_coordinate / svg_width;
+                        temp_val.y = val.y_coordinate / svg_height;
+                        floor_1.locations.push(temp_val);
                         // }
                         // else {
                         //     return;
