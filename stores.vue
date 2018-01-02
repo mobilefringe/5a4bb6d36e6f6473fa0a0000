@@ -21,7 +21,7 @@
                 changeMode(mode) {
                     this.listMode = mode;
                 },
-                locationopened(){
+                locationopened(e, loc){
                     
                 }
             },
