@@ -197,7 +197,7 @@
                 mapready(e, location) {
                     console.log('Map is ready!')
                 },
-                locationopened(e, location) {
+                locationopened(e, loc) {
                     console.log(location.title + ' opened.');
                     locationopened(e, loc){
                     var self = map.data('mapplic');
