@@ -82,6 +82,10 @@
                     type: Boolean,
                     default: true
                 },
+                clearbutton: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
