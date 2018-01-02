@@ -201,7 +201,7 @@
                 levelswitched(e, self) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-                switchLevel(target) - {
+                switchLevel(target) {
                     self.switchLevel(target);
                 },
                 moveTo(x, y, s, d) {
