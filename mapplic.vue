@@ -42,25 +42,61 @@
         return Vue.component('map-component', {
             template: template,
             props: {
-                value: {
-                    type: String,
-                    default: ''
-                },
-                autocomplete: {
-                    type: Boolean,
-                    default: true
-                },
-                placeholder: {
-                    type: String,
-                    default: 'Search...'
-                },
-                suggestionAttribute: {
+                svgMapUrl: {
                     type: String,
                     required: true
                 },
-                eventName: {
+                colours:{
+                    type: Object,
+                    default: this.getColour
+                },
+                viewBox : {
+                    type : Array,
+                    default: this.getEmptyArray //viewBox: [3000,0,6000,6000],
+                },
+                disableAll: {
+                    type: Boolean,
+                    default: false
+                },
+                height: {
+                    type: Number,
+                    default: 1000
+                },
+                width:{
+                    type: Number,
+                    default: 1300
+                },
+                regions: {
+                    type: Array,
+                    default: this.getEmptyArray
+                },
+                loadingText: {
                     type: String,
-                    default: 'fuseResultsUpdated'
+                    default: "Loading, please wait..."
+                },
+                zoom: {
+                    type: Boolean,
+                    default: true
+                },
+                zoomButtons: {
+                    type: Object,
+                    default: this.getZoomBtn
+                },
+                pan: {
+                    type: Boolean,
+                    default: true
+                },
+                cursor: {
+                    type: String,
+                    default: 'pointer'
+                },
+                responsive: {
+                    type: Boolean,
+                    default: true
+                },
+                zoomLimit: {
+                    type: Array,
+                    default: this.getZoomLimit
                 }
             },
             data() {
