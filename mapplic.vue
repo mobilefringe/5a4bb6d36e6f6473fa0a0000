@@ -163,7 +163,7 @@
                 }
             },
             methods: {
-                getZoomLimit () {
+                getTooltip () {
                     return [0,10];
                 },
             },
