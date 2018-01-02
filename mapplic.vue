@@ -42,7 +42,7 @@
         return Vue.component('map-component', {
             template: template,
             props: {
-                svgMapUrl: {
+                source: {
                     type: String,
                     required: true
                 },
