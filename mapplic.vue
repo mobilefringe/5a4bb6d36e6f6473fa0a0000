@@ -124,7 +124,7 @@
                 },
                 maxscale: {
                     type: Number,
-                    default: true
+                    default: 4
                 },
             },
             data() {
