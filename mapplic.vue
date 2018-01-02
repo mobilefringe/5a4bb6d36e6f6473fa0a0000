@@ -165,7 +165,7 @@
                         maxscale: this.maxscale,
                         zoom: this.zoom
                     }
-                    return options
+                    return options;
                 }
             },
             mounted() {
