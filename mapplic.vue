@@ -172,7 +172,8 @@
                     	developer: developer,
                     	fillcolor: fillcolor,
                     	action: action,
-                    	maxscale: maxscale
+                    	maxscale: maxscale,
+                    	zoom: zoom
                     }
                     return options
                 }
