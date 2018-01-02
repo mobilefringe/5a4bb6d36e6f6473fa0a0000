@@ -69,6 +69,9 @@
                 storesByCategoryName() {
                     return this.$store.getters.storesByCategoryName;
                 },
+                allStores() {
+                    return this.$store.getters.processedStores;
+                },
                 getStoreSource () {
                     // floor1_stores= $.grep(stores, function( n, i ) {
                     //     return ( n.z_coordinate == 1);
