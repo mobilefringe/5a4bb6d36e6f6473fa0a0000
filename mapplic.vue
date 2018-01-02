@@ -159,6 +159,7 @@
                     	minimap: minimap,
                     	sidebar: sidebar,
                     	search: search,
+                    	lightbox: lightbox,
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
