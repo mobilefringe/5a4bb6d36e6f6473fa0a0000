@@ -39,7 +39,7 @@
 
 <script>
     define(["Vue", "mousewheel", "hammer", "mapplic"], function(Vue, mousewheel, hammer, mapplic) {
-        return Vue.component('map-component', {
+        return Vue.component('mapplic-map', {
             template: template,
             props: {
                 store_source: {
