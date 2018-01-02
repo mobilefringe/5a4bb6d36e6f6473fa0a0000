@@ -85,7 +85,7 @@
                 allCategories() {
                     return this.$store.getters.processedCategories;
                 },
-                getStoreSource () {
+                getStoreSource() {
                     var mall_json = {};
                     var landmarks = {};
                     mall_json.mapwidth = "1000";
