@@ -202,7 +202,7 @@
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
                 switchLevel(target) - {
-                    self.switchLevel(target1);
+                    self.switchLevel(target);
                 },
                 moveTo(x, y, s, d) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
