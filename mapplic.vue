@@ -54,9 +54,9 @@
                     type: String,
                     default: null
                 },
-                loadingText: {
-                    type: String,
-                    default: "Loading, please wait..."
+                mapfill: {
+                    type: Boolean,
+                    default: true
                 },
                 zoom: {
                     type: Boolean,
