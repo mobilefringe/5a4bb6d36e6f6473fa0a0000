@@ -84,7 +84,7 @@
                 },
                 getStoreSource () {
                     var mall_json = {};
-                    // var landmarks = {};
+                    var landmarks = {};
                     // mall_json.mapwidth = "1000";
                     // mall_json.mapheight = "1000";
                     // mall_json.categories=[]; 
