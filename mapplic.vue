@@ -181,7 +181,7 @@
                   this.map = $('#mapplic').mapplic(this.options);
                 },
                 locationopened (e, location) {
-                    locationopened
+                    console.log(location.title + ' opened.');
                 }
             },
             mounted() {
