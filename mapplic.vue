@@ -208,7 +208,7 @@
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
                 getLocationData(id) {
-                   self.getLocationData(id);
+                   this.self.getLocationData(id);
                 },
                 showLocation(id, d) {
                     this.self.showLocation(id,d);
