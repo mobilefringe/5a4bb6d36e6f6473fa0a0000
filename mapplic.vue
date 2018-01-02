@@ -110,6 +110,10 @@
                     type: Boolean,
                     default: true
                 },
+                fullscreen: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
