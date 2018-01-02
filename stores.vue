@@ -111,7 +111,7 @@
                     floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
                     floor_1.show="true";
                     floor_1.locations = [];
-                    $.each(this.floor1Stores, function(key,val){
+                    _.forEach(this.floor1Stores, function(key,val){
                         //for testing limiting the store numbers to this
                         // if(key < 10) {
                             var temp_val = {};
