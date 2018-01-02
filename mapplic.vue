@@ -43,7 +43,7 @@
             template: template,
             props: {
                 source: {
-                    type: String,
+                    type: Object,
                     required: true
                 },
                 colours:{
