@@ -155,6 +155,7 @@
                     	height: height,
                     	landmark: landmark,
                     	mapfill: mapfill,
+                    	markers: markers,
                     	minimap: minimap,
                     	sidebar: sidebar,
                     	hovertip: hovertip,
