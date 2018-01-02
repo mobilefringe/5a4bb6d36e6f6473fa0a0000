@@ -211,7 +211,7 @@
                    self.getLocationData(id);
                 },
                 showLocation(id, d) {
-                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                    self.getLocationData(id,d);
                 },
                 hideLocation() {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
