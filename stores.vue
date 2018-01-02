@@ -76,7 +76,7 @@
                     return _.filter(this.allStores, ['z_coordinate', 1]);
                 },
                 floor2Stores() {
-                    return _.filter(this.allStores, ['z_coordinate', 12]);
+                    return _.filter(this.allStores, ['z_coordinate', 2]);
                 },
                 getStoreSource () {
                     // floor1_stores= $.grep(stores, function( n, i ) {
