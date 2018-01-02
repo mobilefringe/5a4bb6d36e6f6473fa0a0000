@@ -118,7 +118,7 @@
                     type: String,
                     default: "#4d5e6d"
                 },
-                zoombuttons: {
+                action: {
                     type: Boolean,
                     default: true
                 },
