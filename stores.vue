@@ -82,6 +82,9 @@
                 floor2Stores() {
                     return _.filter(this.allStores, ['z_coordinate', 2]);
                 },
+                processedCategories() {
+                    
+                },
                 getStoreSource () {
                     var mall_json = {};
                     var landmarks = {};
