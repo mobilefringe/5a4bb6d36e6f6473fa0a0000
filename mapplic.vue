@@ -163,6 +163,7 @@
                     	deeplinking: deeplinking,
                     	clearbutton: clearbutton,
                     	zoombuttons: zoombuttons,
+                    	zoomoutclose:zoomoutclose,
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
