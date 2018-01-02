@@ -108,7 +108,7 @@
                     floor_1.title = "Floor 1";
                     floor_1.map = "//www.mallmaverick.com/system/site_images/photos/000/035/861/original/NorthPark_-_Dec-15-2017_-_Floor_1.svg;
                     //"//www.mallmaverick.com/system/site_images/photos/000/034/516/original/Northpark_-_Map_-_Floor_1_-modifed_for_Mapplic.svg";
-                    floor_1.minimap = "/codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
+                    floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
                     floor_1.show="true";
                     floor_1.locations = [];
                     $.each(this.floor1Stores, function(key,val){
@@ -175,6 +175,7 @@
                     // });
                     
                     // mall_json.levels.push(floor_2);
+                    return mall_json;
                 }
             }
         });
