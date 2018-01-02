@@ -38,7 +38,7 @@
 </style>
 
 <script>
-  define(["Vue", "Fuse"], function(Vue, Fuse) {
+  define(["Vue", "mapplic"], function(Vue, Fuse) {
     return Vue.component('search-component', {
       template: template,
       props: {
