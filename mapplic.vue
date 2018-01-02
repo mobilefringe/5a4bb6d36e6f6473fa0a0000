@@ -162,6 +162,7 @@
                     	lightbox: lightbox,
                     	deeplinking: deeplinking,
                     	clearbutton: clearbutton,
+                    	zoombuttons: zoombuttons
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
