@@ -222,7 +222,10 @@
                     console.log('Location closed.');
                 },
                 levelswitched(e, level) {
-                    console.log('Switched to ' + level + ' level.');
+                    if(level) {
+                        console.log('Switched to ' + level + ' level.');
+                        
+                    }
                 },
                 positionchanged(e, self) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
