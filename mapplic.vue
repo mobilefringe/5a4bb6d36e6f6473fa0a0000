@@ -1,6 +1,6 @@
 <template>
   <div style="position:relative;height:900px;overflow:hidden;">
-    <div id="mapplic" class="mapplic" @mapready="mapready"></div>
+    <div id="mapplic" class="mapplic" @mapready="mapready" @locationopened="locationopened"></div>
 </div>
 </template>
 
