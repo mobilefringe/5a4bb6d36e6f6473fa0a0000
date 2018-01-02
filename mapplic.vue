@@ -32,9 +32,9 @@
     	fill: #a366d4;
     	opacity: 1.0 !important;
     }
-    .mapplic-coordinates {
-        visibility: hidden;
-    }
+    /*.mapplic-coordinates {*/
+    /*    visibility: hidden;*/
+    /*}*/
 </style>
 
 <script>
