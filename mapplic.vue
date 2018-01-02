@@ -38,7 +38,7 @@
 </style>
 
 <script>
-  define(["Vue", "mousewheel","hammer","mapplic"], function(Vue, Fuse) {
+  define(["Vue", "mousewheel","hammer","mapplic"], function(Vue, mousewheel, hammer, mapplic) {
     return Vue.component('search-component', {
       template: template,
       props: {
