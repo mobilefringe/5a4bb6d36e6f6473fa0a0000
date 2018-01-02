@@ -120,7 +120,7 @@
                 },
                 action: {
                     type: String,
-                    default: true
+                    default: 'tooltip'
                 },
             },
             data() {
