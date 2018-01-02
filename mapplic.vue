@@ -167,7 +167,8 @@
                     	hovertip: hovertip,
                     	tooltip: tooltip,
                     	smartip: smartip,
-                    	mousewheel: mousewheel
+                    	mousewheel: mousewheel,
+                    	fullscreen: fullscreen
                     	developer: developer,
                     	maxscale: maxscale
                     }
