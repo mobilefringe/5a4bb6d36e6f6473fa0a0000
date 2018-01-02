@@ -113,6 +113,10 @@
                 fullscreen: {
                     type: Boolean,
                     default: false
+                },
+                fillcolor: {
+                    type: String,
+                    default: ""
                 }
             },
             data() {
