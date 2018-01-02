@@ -66,6 +66,10 @@
                     type: Boolean,
                     default: true
                 },
+                sidebar: {
+                    type: Boolean,
+                    default: true
+                },
             },
             data() {
                 return {
