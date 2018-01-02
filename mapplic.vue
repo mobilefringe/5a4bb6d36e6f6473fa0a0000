@@ -179,6 +179,9 @@
                 },
                 initMapplic () {
                   this.map = $('#mapplic').mapplic(this.options);
+                },
+                locationopened (e, location) {
+                    locationopened
                 }
             },
             mounted() {
