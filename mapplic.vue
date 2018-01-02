@@ -98,7 +98,7 @@
                     type: Boolean,
                     default: false
                 },
-                markers: {
+                tooltip: {
                     type: Boolean,
                     default: true
                 },
