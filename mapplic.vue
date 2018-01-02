@@ -187,7 +187,7 @@
                     console.log(location.title + ' opened.');
                 },
                 locationclosed (e) {
-                    console.log(location.title + ' opened.');
+                    console.log('Location closed.');
                 },
                 levelswitched (e, level) {
                     console.log('Switched to ' + level + ' level.');
