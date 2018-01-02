@@ -217,7 +217,7 @@
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
                 updateLocation(id) {
-                    self.updateLocation(id);
+                    this.self.updateLocation(id);
                 },
             },
             mounted() {
