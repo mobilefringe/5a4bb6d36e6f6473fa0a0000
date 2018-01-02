@@ -141,76 +141,80 @@
                 options() {
                     var options = {
                         source: this.store_source,
-                    	height: this.height,
-                    	landmark: this.landmark,
-                    	mapfill: this.mapfill,
-                    	markers: this.markers,
-                    	minimap: this.minimap,
-                    	sidebar: this.sidebar,
-                    	search: this.search,
-                    	lightbox: this.lightbox,
-                    	deeplinking: this.deeplinking,
-                    	clearbutton: this.clearbutton,
-                    	zoombuttons: this.zoombuttons,
-                    	zoomoutclose: this.zoomoutclose,
-                    	hovertip: this.hovertip,
-                    	tooltip: this.tooltip,
-                    	smartip: this.smartip,
-                    	mousewheel: this.mousewheel,
-                    	fullscreen: this.fullscreen,
-                    	developer: this.developer,
-                    	fillcolor: this.fillcolor,
-                    	action: this.action,
-                    	maxscale: this.maxscale,
-                    	zoom: this.zoom
+                        height: this.height,
+                        landmark: this.landmark,
+                        mapfill: this.mapfill,
+                        markers: this.markers,
+                        minimap: this.minimap,
+                        sidebar: this.sidebar,
+                        search: this.search,
+                        lightbox: this.lightbox,
+                        deeplinking: this.deeplinking,
+                        clearbutton: this.clearbutton,
+                        zoombuttons: this.zoombuttons,
+                        zoomoutclose: this.zoomoutclose,
+                        hovertip: this.hovertip,
+                        tooltip: this.tooltip,
+                        smartip: this.smartip,
+                        mousewheel: this.mousewheel,
+                        fullscreen: this.fullscreen,
+                        developer: this.developer,
+                        fillcolor: this.fillcolor,
+                        action: this.action,
+                        maxscale: this.maxscale,
+                        zoom: this.zoom
                     }
                     return options
                 }
             },
             watch: {
-                map : function () {
+                map: function() {
                     this.$emit('updateMap', this.map);
                 }
             },
             methods: {
-                getTooltip () {
+                getTooltip() {
                     //   { thumb: true, desc: true, link: true }  
-                    return  { thumb: true, desc: true, link: true };
+                    return {
+                        thumb: true,
+                        desc: true,
+                        link: true
+                    };
                 },
-                initMapplic () {
-                  this.map = $('#mapplic').mapplic(this.options);
+                initMapplic() {
+                    this.map = $('#mapplic').mapplic(this.options);
                 },
-                mapready (e, location) {
+                mapready(e, location) {
                     console.log('Map is ready!')
                 },
-                locationopened (e, location) {
+                locationopened(e, location) {
                     console.log(location.title + ' opened.');
                 },
-                locationclosed (e) {
+                locationclosed(e) {
                     console.log('Location closed.');
                 },
-                levelswitched (e, level) {
+                levelswitched(e, level) {
                     console.log('Switched to ' + level + ' level.');
                 },
-                levelswitched (e, self) {
+                levelswitched(e, self) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
                 switchLevel(target) - {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-moveTo(x, y, s, d)  {
+                moveTo(x, y, s, d) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-getLocationData(id)  {
+                getLocationData(id) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-showLocation(id, d)  {
+                showLocation(id, d) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-hideLocation()  {
+                hideLocation() {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
-updateLocation(id)  {
+                updateLocation(id) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
             },
