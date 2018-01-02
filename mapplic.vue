@@ -70,7 +70,7 @@
                     type: Boolean,
                     default: true
                 },
-                markers: {
+                search: {
                     type: Boolean,
                     default: true
                 },
