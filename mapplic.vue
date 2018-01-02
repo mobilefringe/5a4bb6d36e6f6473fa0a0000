@@ -189,6 +189,12 @@
                 locationclosed (e, location) {
                     console.log(location.title + ' opened.');
                 },
+                locationclosed (e, location) {
+                    console.log(location.title + ' opened.');
+                },
+                locationclosed (e, location) {
+                    console.log(location.title + ' opened.');
+                },
             },
             mounted() {
                 this.initMapplic()
