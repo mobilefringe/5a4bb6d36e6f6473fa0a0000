@@ -37,11 +37,6 @@ require.config({
     }
 });
 
-
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1487363250000/mapplic.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
-
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue!search-component', 'vue-simple-spinner', 'vue-breadcrumbs', 'vue-paginate', 'vue-social-sharing', 'vue-select', 'lightbox', 'vue-affix', 'vue-calendar'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent, Spinner, VueBreadcrumbs, VuePaginate, SocialSharing, VueSelect, Viewer, Lightbox, VueAffix, VCalendar) {
     
     Vue.use(Meta);
