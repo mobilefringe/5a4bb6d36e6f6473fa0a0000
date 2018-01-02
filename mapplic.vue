@@ -159,13 +159,6 @@
                     	developer: false,
                     	maxscale: 3
                     }
-                    if (this.id !== '') {
-                        options.id = this.id
-                    }
-                    if (this.autocomplete == false || this.keys === undefined) {
-                        options.keys = []
-                        options.keys.push(this.suggestionAttribute)
-                    }
                     return options
                 }
             },
