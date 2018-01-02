@@ -195,6 +195,24 @@
                 levelswitched (e, self) {
                     console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
+                switchLevel(target) - {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
+moveTo(x, y, s, d)  {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
+getLocationData(id)  {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
+showLocation(id, d)  {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
+hideLocation()  {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
+updateLocation(id)  {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
+                },
             },
             mounted() {
                 this.initMapplic()
