@@ -42,7 +42,7 @@
         return Vue.component('map-component', {
             template: template,
             props: {
-                source: {
+                store_source: {
                     type: Object,
                     required: true
                 },
