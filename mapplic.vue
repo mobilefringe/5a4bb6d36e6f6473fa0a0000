@@ -192,8 +192,8 @@
                 levelswitched (e, location) {
                     console.log(location.title + ' opened.');
                 },
-                levelswitched (e, location) {
-                    console.log(location.title + ' opened.');
+                levelswitched (e, self) {
+                    console.log('Pan or zoom performed, current scale: ' + self.scale);
                 },
             },
             mounted() {
