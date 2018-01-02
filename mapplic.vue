@@ -159,20 +159,20 @@
                 }
             },
             watch: {
-                value() {
-                    if (this.value.trim() === '') {
-                        if (this.defaultAll) {
-                            this.result = this.list
-                        } else {
-                            this.result = []
-                        }
-                    } else {
-                        this.result = this.fuse.search(this.value.trim())
-                    }
-                },
-                result() {
-                    this.$parent.$emit(this.eventName, this.result)
-                }
+                // value() {
+                //     if (this.value.trim() === '') {
+                //         if (this.defaultAll) {
+                //             this.result = this.list
+                //         } else {
+                //             this.result = []
+                //         }
+                //     } else {
+                //         this.result = this.fuse.search(this.value.trim())
+                //     }
+                // },
+                // result() {
+                //     this.$parent.$emit(this.eventName, this.result)
+                // }
             },
             methods: {
                 getTooltip () {
