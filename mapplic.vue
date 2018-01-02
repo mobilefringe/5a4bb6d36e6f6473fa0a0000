@@ -52,7 +52,7 @@
                 },
                 landmark: {
                     type: Array,
-                    default: this.getEmptyArray
+                    default: null
                 },
                 loadingText: {
                     type: String,
