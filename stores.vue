@@ -111,34 +111,34 @@
                     floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/image/jpeg/1510940237000/Northpark_-_Map_-_Floor_1_-_Mapplic_Test_1.jpg";
                     floor_1.show="true";
                     floor_1.locations = [];
-                    // $.each(floor1_stores, function(key,val){
-                    //     //for testing limiting the store numbers to this
-                    //     // if(key < 10) {
-                    //         var temp_val = {};
-                    //         temp_val.id = val.svgmap_region;
-                    //         temp_val.title= val.name;
-                    //         temp_val.about = $.trim(val.description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";;
-                    //         temp_val.category = val.categories[1];
-                    //         // temp_val.thumbnail = "";
-                    //         temp_val.link = "/stores/"+val.slug;
-                    //         temp_val.pin = "hidden";
-                    //         // temp_val.action = "none";
-                    //         temp_val.fill = "#";
-                    //         // if(val.store_front_url_abs.indexOf("missing") == -1){
-                    //         //     temp_val.thumbnail=val.store_front_url_abs;
-                    //         // }
-                    //         //get svg's wifth/height by checking the map
-                    //         var svg_width =  1530;
-                    //         var svg_height = 1358;
+                    $.each(floor1_stores, function(key,val){
+                        //for testing limiting the store numbers to this
+                        // if(key < 10) {
+                            var temp_val = {};
+                            temp_val.id = val.svgmap_region;
+                            temp_val.title= val.name;
+                            temp_val.about = $.trim(val.description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";;
+                            temp_val.category = val.categories[1];
+                            // temp_val.thumbnail = "";
+                            temp_val.link = "/stores/"+val.slug;
+                            temp_val.pin = "hidden";
+                            // temp_val.action = "none";
+                            temp_val.fill = "#";
+                            // if(val.store_front_url_abs.indexOf("missing") == -1){
+                            //     temp_val.thumbnail=val.store_front_url_abs;
+                            // }
+                            //get svg's wifth/height by checking the map
+                            var svg_width =  1530;
+                            var svg_height = 1358;
                             
-                    //         temp_val.x = val.x_coordinate/svg_width;
-                    //         temp_val.y = val.y_coordinate/svg_height;
-                    //         floor_1.locations.push(temp_val);
-                    //     // }
-                    //     // else {
-                    //     //     return;
-                    //     // }
-                    // });
+                            temp_val.x = val.x_coordinate/svg_width;
+                            temp_val.y = val.y_coordinate/svg_height;
+                            floor_1.locations.push(temp_val);
+                        // }
+                        // else {
+                        //     return;
+                        // }
+                    });
                     // mall_json.levels.push(floor_1);
                     // // need to add the following for each floor we want to configure.
                     // var floor_2 ={};
