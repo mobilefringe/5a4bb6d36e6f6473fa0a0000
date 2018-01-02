@@ -136,7 +136,7 @@
                     isOpen: false,
                     highlightedPosition: 0,
                     //search: '',
-                    fuse: null,
+                    map: null,
                     result: [],
                     developer: true
                 }
