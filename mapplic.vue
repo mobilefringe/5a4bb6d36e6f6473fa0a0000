@@ -36,8 +36,7 @@
         visibility: hidden;
     }
 </style>
-<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1510935230000/mapplic.css" rel="stylesheet">
-<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+
 <script>
     define(["Vue","jquery", "mousewheel", "hammer", "mapplic"], function(Vue,$, mousewheel, hammer, mapplic) {
         return Vue.component('mapplic-map', {
