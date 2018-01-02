@@ -154,7 +154,7 @@
                         source: this.store_source,
                     	height: height,
                     	landmark: landmark,
-                    	mapfill: mapfillm
+                    	mapfill: mapfill,
                     	minimap: minimap,
                     	sidebar: sidebar,
                     	hovertip: hovertip,
