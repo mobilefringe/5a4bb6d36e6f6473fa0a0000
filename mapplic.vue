@@ -161,6 +161,7 @@
                     	search: search,
                     	lightbox: lightbox,
                     	deeplinking: deeplinking,
+                    	clearbutton: clearbutton,
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
