@@ -53,7 +53,7 @@
             },
             mounted() {
                 console.log("floor1Stores",this.floor1Stores);
-                console.log("floor2Stores",floor2Stores);
+                console.log("floor2Stores", this.floor2Stores);
             },
             methods: {
                 changeMode (mode) {
