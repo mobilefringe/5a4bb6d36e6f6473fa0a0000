@@ -61,26 +61,6 @@
                 markers: {
                     type: Boolean,
                     default: true
-                },
-                zoomButtons: {
-                    type: Object,
-                    default: this.getZoomBtn
-                },
-                pan: {
-                    type: Boolean,
-                    default: true
-                },
-                cursor: {
-                    type: String,
-                    default: 'pointer'
-                },
-                responsive: {
-                    type: Boolean,
-                    default: true
-                },
-                zoomLimit: {
-                    type: Array,
-                    default: this.getZoomLimit
                 }
             },
             data() {
