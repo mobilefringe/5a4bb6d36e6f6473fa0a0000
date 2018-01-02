@@ -160,7 +160,7 @@
                     	sidebar: sidebar,
                     	search: search,
                     	lightbox: lightbox,
-                    	deeplinking: deeplinking
+                    	deeplinking: deeplinkingm
                     	hovertip: hovertip,
                     	developer: developer,
                     	maxscale: maxscale
