@@ -125,7 +125,8 @@
                     highlightedPosition: 0,
                     //search: '',
                     fuse: null,
-                    result: []
+                    result: [],
+                    developer: true
                 }
             },
             computed: {
