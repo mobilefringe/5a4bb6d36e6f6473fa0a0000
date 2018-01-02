@@ -94,7 +94,7 @@
                     type: Boolean,
                     default: false
                 },
-                markers: {
+                hovertip: {
                     type: Boolean,
                     default: true
                 },
