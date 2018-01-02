@@ -189,10 +189,18 @@
                     return  { thumb: true, desc: true, link: true };
                 },
                 initMapplic () {
-                  this.fuse = new Fuse(this.list, this.options);
-                  if (this.defaultAll) {
-                    this.result = this.list
-                  }
+                  this.map = $('#mapplic').mapplic({
+                	source: mall_json,
+                	height: 800,
+                	landmark : true,
+                	mapfill:true,
+                	minimap: true,
+                	sidebar: false,
+                	hovertip: false,
+                	developer: true,
+                	maxscale: 5,
+                	skin: 'mapplic-dark'
+                });
                 }
             },
             mounted() {
