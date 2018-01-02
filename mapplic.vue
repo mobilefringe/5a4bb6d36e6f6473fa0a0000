@@ -142,13 +142,6 @@
                 }
             },
             computed: {
-                /*
-                fOptions() {
-                  const re = new RegExp(this.search, 'i')
-                  console.log(this.result);
-                  return this.result.filter(o => o[this.suggestionAttribute].match(re))
-                },
-                */
                 options() {
                     var options = {
                         source: this.store_source,
