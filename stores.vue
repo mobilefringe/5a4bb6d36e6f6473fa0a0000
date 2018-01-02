@@ -20,8 +20,7 @@
             methods: {
                 changeMode(mode) {
                     this.listMode = mode;
-                },
-                
+                }
             },
             computed: {
                 property() {
