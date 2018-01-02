@@ -91,7 +91,7 @@
                     mall_json.mapheight = "1000";
                     mall_json.categories = [];
                     // console.log(store_cats);
-                    _.forEach(this.allCategories, function(value, key) {
+                    _.forEach(this.allCategories, function(val, key) {
                         var temp_val = {};
                         temp_val.id = val.id;
                         temp_val.title = val.name;
