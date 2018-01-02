@@ -168,7 +168,6 @@
                     return options
                 }
             },
-            
             mounted() {
                 this.initMapplic(),
             },
