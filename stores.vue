@@ -1,6 +1,6 @@
 <template>
     <div class="page-container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <svg-map :store_source="getSVGurl"></svg-map>
+        <svg-map :store_source="getStoreSource"></svg-map>
         <!--<div class="row">-->
         <!--    <div class="col-md-12">-->
         <!--        <ul class="">-->
