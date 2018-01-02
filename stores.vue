@@ -1,6 +1,6 @@
 <template>
     <div class="page-container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <mapplic-map :store_source="getStoreSource" :height="800" :minimap= "true" :sidebar="true" :maxscale= "5"></mapplic-map>
+        <mapplic-map :store_source="getStoreSource" :height="800" :minimap= "true" :sidebar="true" :maxscale= "5" @locationopened=""></mapplic-map>
     </div>
 </template>
 <script>
