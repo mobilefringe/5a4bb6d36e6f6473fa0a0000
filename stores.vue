@@ -1,5 +1,6 @@
 <template>
     <div class="page-container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    
         <!--<div class="row">-->
         <!--    <div class="col-md-12">-->
         <!--        <ul class="">-->
