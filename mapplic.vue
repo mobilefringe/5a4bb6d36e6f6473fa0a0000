@@ -119,7 +119,7 @@
                     default: "#4d5e6d"
                 },
                 action: {
-                    type: Boolean,
+                    type: String,
                     default: true
                 },
             },
