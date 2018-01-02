@@ -74,7 +74,7 @@
                     type: Boolean,
                     default: true
                 },
-                markers: {
+                lightbox: {
                     type: Boolean,
                     default: true
                 },
