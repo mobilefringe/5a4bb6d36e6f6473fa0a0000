@@ -151,7 +151,7 @@
                 */
                 options() {
                     var options = {
-                        source: 'map-data.json',
+                        source: this.source,
                     	height: 480,
                     	minimap: false,
                     	sidebar: true,
