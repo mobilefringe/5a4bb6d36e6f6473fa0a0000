@@ -86,7 +86,7 @@
                     type: Boolean,
                     default: true
                 },
-                markers: {
+                zoombuttons: {
                     type: Boolean,
                     default: true
                 },
