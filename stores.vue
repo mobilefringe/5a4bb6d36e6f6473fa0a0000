@@ -73,7 +73,7 @@
                     return this.$store.getters.processedStores;
                 },
                 floor1Stores() {
-                    return _.filter(users, ['active', false]);
+                    return _.filter(this.allStores, ['active', false]);
                 },
                 floor2Stores() {
                     
