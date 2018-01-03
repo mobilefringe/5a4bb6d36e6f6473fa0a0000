@@ -64,7 +64,7 @@
                     });
                     // this.floor1Stores
                     mall_json.levels = [];
-                    // // need to add the following for each floor we want to configure.
+                    // need to add the following for each floor we want to configure.
                     var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Floor 1";
