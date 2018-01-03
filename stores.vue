@@ -104,15 +104,15 @@
                     mall_json.levels.push(floor_1);
                     
                     // need to add the following for each floor we want to configure.
-                    var floor_1 = {};
-                    floor_1.id = "first-floor";
-                    floor_1.title = "Floor 1";
-                    floor_1.map = "//www.mallmaverick.com/system/site_images/photos/000/035/861/original/NorthPark_-_Dec-15-2017_-_Floor_1.svg";
+                    var floor_2 = {};
+                    floor_2.id = "first-floor";
+                    floor_2.title = "Floor 1";
+                    floor_2.map = "//www.mallmaverick.com/system/site_images/photos/000/035/861/original/NorthPark_-_Dec-15-2017_-_Floor_1.svg";
                     //"//www.mallmaverick.com/system/site_images/photos/000/034/516/original/Northpark_-_Map_-_Floor_1_-modifed_for_Mapplic.svg";
-                    floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
-                    floor_1.show = "true";
-                    floor_1.locations = [];
-                    _.forEach(this.floor1Stores, function(val, key) {
+                    floor_2.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
+                    floor_2.show = "true";
+                    floor_2.locations = [];
+                    _.forEach(this.floor2Stores, function(val, key) {
                         //for testing limiting the store numbers to this
                         // if(key < 10) {
                         var temp_val = {};
@@ -134,13 +134,13 @@
 
                         temp_val.x = val.x_coordinate / svg_width;
                         temp_val.y = val.y_coordinate / svg_height;
-                        floor_1.locations.push(temp_val);
+                        floor_2.locations.push(temp_val);
                         // }
                         // else {
                         //     return;
                         // }
                     });
-                    mall_json.levels.push(floor_1);
+                    mall_json.levels.push(floor_2);
                     return mall_json;
                 }
             }
