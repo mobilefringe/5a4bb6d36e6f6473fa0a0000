@@ -188,6 +188,13 @@
                 initMapplic() {
                     this.map = $('#mapplic').mapplic(this.options);
                     this.self = this.map.data('mapplic');
+                    
+                    this.map.on('mapready',this.mapready());
+                    this.map.on('locationopened',this.locationopened());
+                    this.map.on('locationclosed',this.locationclosed());
+                    this.map.on('levelswitched',this.levelswitched());
+                    this.map.on('positionchanged',this.positionchanged());
+                
                 },
                 mapready(e, location) {
                     console.log('Map is ready!')
